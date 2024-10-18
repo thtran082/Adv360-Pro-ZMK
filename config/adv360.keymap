@@ -31,6 +31,15 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        togEN_VI {
+            bindings = <&kp LC(LEFT_SHIFT)>;
+            key-positions = <49 50>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -66,11 +75,11 @@
 
         layer_mod {
             bindings = <
-&none  &kp F1        &kp F2         &kp F3  &kp F4      &kp F5  &none                                                  &trans                  &kp F6  &kp F7      &kp F8        &kp F9     &kp F10  &kp F11
-&none  &none         &none          &none   &none       &none   &bootloader                                            &bootloader             &none   &none       &kp UP_ARROW  &none      &none    &kp F12
-&none  &kp LA(LEFT)  &kp LA(RIGHT)  &none   &none       &none   &none        &none  &none      &bt BT_CLR  &none       &rgb_ug RGB_MEFS_CMD 5  &none   &kp LEFT    &kp DOWN      &kp RIGHT  &none    &none
-&none  &none         &none          &none   &macro_ver  &none                       &none      &none                                           &none   &none       &none         &none      &none    &none
-&none  &none         &none          &none   &none               &none        &none  &none      &none       &bl BL_TOG  &rgb_ug RGB_TOG                 &bl BL_INC  &bl BL_DEC    &none      &none    &none
+&none   &kp F1        &kp F2         &kp F3  &kp F4      &kp F5  &none                                                  &trans                  &kp F6  &kp F7      &kp F8        &kp F9     &kp F10  &kp F11
+&none   &none         &none          &none   &none       &none   &bootloader                                            &bootloader             &none   &none       &kp UP_ARROW  &none      &none    &kp F12
+&none   &kp LA(LEFT)  &kp LA(RIGHT)  &none   &none       &none   &none        &none  &none      &bt BT_CLR  &none       &rgb_ug RGB_MEFS_CMD 5  &none   &kp LEFT    &kp DOWN      &kp RIGHT  &none    &none
+&trans  &none         &none          &none   &macro_ver  &none                       &none      &none                                           &none   &none       &none         &none      &none    &none
+&none   &none         &none          &none   &none               &none        &none  &none      &none       &bl BL_TOG  &rgb_ug RGB_TOG                 &bl BL_INC  &bl BL_DEC    &none      &none    &none
             >;
         };
 
