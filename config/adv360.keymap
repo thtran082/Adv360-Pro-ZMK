@@ -35,7 +35,7 @@
         compatible = "zmk,combos";
 
         togEN_VI {
-            bindings = <&kp LC(LEFT_SHIFT)>;
+            bindings = <&kp LC(SPACE)>;
             key-positions = <49 50>;
         };
     };
