@@ -46,7 +46,7 @@
         default_layer {
             bindings = <
 &kp GRAVE      &kp N1            &kp N2              &kp N3          &kp N4          &kp N5  &tog 1                                                                                            &mo 3           &kp N6  &kp N7              &kp N8              &kp N9                &kp N0               &kp MINUS
-&kp TAB        &kp Q             &kp W               &kp E           &kp R           &kp T   &none                                                                                             &kp C_NEXT      &kp Y   &kp U               &kp I               &kp O                 &kp P                &kp BSLH
+&kp TAB        &kp Q             &kp W               &kp E           &kp R           &kp T   &kp LC(A)                                                                                         &kp C_NEXT      &kp Y   &kp U               &kp I               &kp O                 &kp P                &kp BSLH
 &lt 3 ESCAPE   &hm LEFT_SHIFT A  &hm LEFT_CONTROL S  &hm LEFT_ALT D  &hm LEFT_GUI F  &kp G   &kp LS(LA(LC(M)))  &kp LG(LS(N4))  &kp C_BRIGHTNESS_INC      &kp C_VOLUME_UP    &kp C_PLAY_PAUSE  &kp C_PREVIOUS  &kp H   &kp J               &kp K               &kp L                 &kp SEMI             &kp SQT
 &mt LSHIFT F1  &kp Z             &kp X               &kp C           &kp V           &kp B                                      &kp C_BRIGHTNESS_DEC      &kp C_VOLUME_DOWN                                    &kp N   &hm LEFT_COMMAND M  &hm LEFT_ALT COMMA  &hm LEFT_CONTROL DOT  &hm LEFT_SHIFT FSLH  &kp BACKSPACE
 &kp LCTRL      &none             &kp LEFT_ALT        &kp LEFT        &kp RIGHT               &kp LEFT_COMMAND   &kp EQUAL       &kp LC(A)                 &sl 4              &lt 3 ENTER       &kp SPACE               &kp DOWN            &kp UP_ARROW        &kp LBKT              &kp RBKT             &kp LC(A)
@@ -85,11 +85,11 @@
 
         bootApps {
             bindings = <
-&trans  &trans                 &trans                 &trans                 &trans                 &trans                 &trans                                      &trans  &trans  &trans                 &trans                 &trans                 &trans                 &trans
-&trans  &kp LS(LA(LC(LG(Q))))  &kp LS(LA(LC(LG(W))))  &kp E                  &kp R                  &kp LA(LC(LG(LS(T))))  &trans                                      &trans  &kp Y   &kp U                  &kp I                  &kp LS(LA(LC(LG(O))))  &kp LS(LA(LC(LG(P))))  &trans
-&trans  &kp LC(LA(LS(LG(A))))  &kp LS(LA(LC(LG(S))))  &kp LS(LA(LC(LG(D))))  &kp LS(LC(LA(LG(F))))  &kp G                  &trans  &trans  &trans      &trans  &trans  &trans  &kp H   &kp J                  &kp LS(LA(LG(LC(K))))  &kp L                  &kp SEMI               &trans
-&trans  &kp Z                  &kp X                  &kp LS(LA(LC(LG(C))))  &kp V                  &kp LS(LA(LC(LG(B))))                  &trans      &trans                  &kp N   &kp LS(LA(LC(LG(M))))  &trans                 &trans                 &trans                 &trans
-&trans  &trans                 &trans                 &trans                 &trans                                        &trans  &trans  &trans      &trans  &trans  &trans          &trans                 &trans                 &trans                 &trans                 &trans
+&trans  &trans                 &trans                 &trans                 &trans                 &trans                 &trans                                      &trans  &trans                 &trans                 &trans                 &trans                 &trans                 &trans
+&trans  &kp LS(LA(LC(LG(Q))))  &kp LS(LA(LC(LG(W))))  &kp LS(LA(LC(LG(E))))  &kp LS(LC(LG(LA(R))))  &kp LA(LC(LG(LS(T))))  &trans                                      &trans  &kp LS(LA(LG(Y)))      &kp LS(LA(LG(LC(A))))  &kp LS(LA(LC(LG(I))))  &kp LS(LA(LC(LG(O))))  &kp LS(LA(LC(LG(P))))  &trans
+&trans  &kp LC(LA(LS(LG(A))))  &kp LS(LA(LC(LG(S))))  &kp LS(LA(LC(LG(D))))  &kp LS(LC(LA(LG(F))))  &kp LS(LG(LC(LA(G))))  &trans  &trans  &trans      &trans  &trans  &trans  &kp LS(LC(LA(LG(H))))  &kp LS(LA(LC(LG(J))))  &kp LS(LA(LG(LC(K))))  &kp LS(LA(LC(LG(L))))  &kp SEMI               &trans
+&trans  &kp LA(LS(LG(LC(Z))))  &kp LC(LA(LG(LS(X))))  &kp LS(LA(LC(LG(C))))  &kp LA(LG(LC(LS(V))))  &kp LS(LA(LC(LG(B))))                  &trans      &trans                  &kp LG(LC(LS(LA(N))))  &kp LS(LA(LC(LG(M))))  &trans                 &trans                 &trans                 &trans
+&trans  &trans                 &trans                 &trans                 &trans                                        &trans  &trans  &trans      &trans  &trans  &trans                         &trans                 &trans                 &trans                 &trans                 &trans
             >;
         };
     };
