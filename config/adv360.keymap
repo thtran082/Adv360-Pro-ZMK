@@ -92,5 +92,15 @@
 &trans  &trans                 &trans                 &trans                 &trans                                        &trans  &trans  &trans      &trans  &trans  &trans                         &trans                 &trans                 &trans                 &trans                 &trans
             >;
         };
+
+        game {
+            bindings = <
+&trans  &kp N1  &kp N2  &kp N3  &kp N4    &kp N5  &trans                                         &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp Q   &kp W   &kp E   &kp R     &trans  &trans                                         &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &kp D   &kp F     &trans  &kp P      &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp Z   &trans  &trans  &trans    &trans                     &trans      &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &kp LALT          &kp SPACE  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
+            >;
+        };
     };
 };
